@@ -2,7 +2,7 @@ const API_KEY = "87538267f36859310727e841127144a8";
 const COORDS = "coords";
 
 function getWeather(lat,log){
-  fetch(`https:api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}`)
+  fetch(`https:api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${log}&appid=${API_KEY}`)
 }
 
 function saveCoords(coordsObj){
