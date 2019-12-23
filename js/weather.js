@@ -6,15 +6,15 @@ function saveCoords(coordsObj){
 
 function handleGeoSucces(position){
     const latitude = position.coords.latitude;
-    const longtitude = position.coords.longtitude;
+    const longitude = position.coords.longitude;
     const coordsObj = {
       latitude,
-      longtitude
+      longitude
     };
     saveCoords(coordsObj);
 }
 
-function handleGeoError(postion){
+function handleGeoError(position){
     console.log("Error!");
 }
 
