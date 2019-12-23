@@ -32,7 +32,7 @@ function askForCoords(){
 
 function loadCoords() {
     const loadedCoords = localStorage.getItem(COORDS);
-    if(loadCoords === null){
+    if(loadedCoords === null){
         askForCoords();
     }else{
         const parsedCoords = JSON.parse(loadedCoords);
